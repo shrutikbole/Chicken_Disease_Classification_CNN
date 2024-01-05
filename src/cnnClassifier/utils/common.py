@@ -6,8 +6,8 @@ import json
 import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
-from pathlib import path
-from typing import any
+from pathlib import Path
+from typing import Any
 import base64
 
 @ensure_annotations
@@ -37,7 +37,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     
 
 
-    @ensure_annotations
+@ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
 
